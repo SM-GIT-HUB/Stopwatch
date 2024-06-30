@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center justify-center bg-gray-200 h-[80vh] gap-[20px]">
+    <h1 class="font-[Arial] text-[3.5rem] text-gray-800">STOPWATCH</h1>
+
+    <div id="container" class="flex flex-col items-center bg-white p-[30px] rounded-[7px] border-2 border-black w-[350px] md:w-[400px]">
+        <div id="display" class="text-[45px] md:text-[55px] text-center font-bold font-mono text-gray-700 drop-shadow-[2px_2px_2px_rgba(0,0,0,0.4)] mb-[25px]">
+            00:00:00:00
+        </div>
+
+        <div class="w-full text-[20px] flex gap-[5px] items-center justify-center text-white md:gap-[12px]">
+            <button class="border-black border-[1px] px-[15px] py-[5px] rounded-[7px] w-[100px] bg-green-600 hover:bg-green-500 transition-all duration-100 ease-in-out" onclick="start()">Start</button>
+            <button class="border-black border-[1px] px-[15px] py-[5px] rounded-[7px] w-[100px] bg-red-600 hover:bg-red-500 transition-all duration-100 ease-in-out" onclick="stop()">Stop</button>
+            <button class="border-black border-[1px] px-[10px] py-[5px] rounded-[7px] w-[100px] bg-blue-600 hover:bg-blue-500 transition-all duration-100 ease-in-out" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
